@@ -1,0 +1,16 @@
+{
+	"options": {
+		"separator": ";\n\n"
+	},
+	"js": {
+		"src": ["src/*"],
+		"dest": "build/plot.js"
+	},
+	"lib": {
+		"src": [
+	  		"node_modules/jquery/dist/jquery.js",
+	  		"node_modules/snapsvg/dist/snap.svg.js"
+        ],
+		"dest": "build/lib.js"
+	}
+}

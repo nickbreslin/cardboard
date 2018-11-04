@@ -1,0 +1,21 @@
+{
+    "esversion": 6,
+    "browser": true,
+    "jquery":true,
+    "eqeqeq": true,
+    "plusplus": true,
+    "quotmark": true,
+    "strict":true,
+    "globals": {
+        "define": true,
+        "$":true,
+        "Plot":true
+    },
+    "devel":true,
+    "curly": true,
+    "eqnull": true,
+    "latedef": true,
+    "noarg": true,
+    "undef": true,
+    "unused": true
+}

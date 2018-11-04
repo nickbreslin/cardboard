@@ -1,0 +1,6 @@
+{
+    "core": {
+        "files": ["src/*"],
+        "tasks": ["compile"]
+    }
+}
