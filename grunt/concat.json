@@ -9,7 +9,7 @@
 	"lib": {
 		"src": [
 	  		"node_modules/jquery/dist/jquery.js",
-	  		"node_modules/snapsvg/dist/snap.svg.js"
+	  		"node_modules/interactjs/dist/interact.js"
         ],
 		"dest": "build/lib.js"
 	}
