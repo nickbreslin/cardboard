@@ -8,24 +8,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=.85, user-scalable=0, shrink-to-fit=no">
         <meta charset="utf-8">
         <!-- END META -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+        <style>
+        	.my-board {
+        		height: 25%;
+        		background: #efefef;
+        		width: 100%;
+        		padding: 15px;
+        		height: 200px;
+        	}
+
+        	.my-hand {
+        		height: 25%;
+        		background: #ddd;
+        		width: 100%;
+        		padding: 15px;
+        		height: 200px;
+        	}
+
+        	body {
+        		margin: 0;
+        		padding: 0;
+        	}
+
+        	.dropzone {
+			  background-color: #ccc;
+			  border: dashed 4px transparent;
+			  border-radius: 4px;
+			  margin: 10px auto 30px;
+			  padding: 10px;
+			  transition: background-color 0.3s;
+			}
+
+			.drag-drop {
+				height: 100px;
+				width: 80px;
+				background-color: red;
+			}
+    	</style>
 	</head>
 
-	<body class='bg-light'>
+	<body>
 
-		<main class='container'>
-			<svg id='plot'></svg>			
+		<main class=''>
+			<div class='row'>
+				<div class='col my-board dropzone'>
+
+				</div>
+			</div>
+
+			<div class='row'>
+				<div class='col my-hand'>
+					<div class='drag-drop'></div>
+				</div>
+			</div>
+<!--
+				<div class="card drag-drop" style="width: 18rem;">
+					<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<a href="#" class="card-link">Card link</a>
+					<a href="#" class="card-link">Another link</a>
+				</div>
+			-->
 		</main>
 
 	</body>
-
 	<script src='../build/lib.js'></script>
 	<script src='../build/plot.js'></script>
-
 	<script>
+		$( document ).ready(function() {
 
-		Plot.Grid.init({
-			size : 100,
-			labels: ['Q', 'P']
 		});
 	</script>
 </html>
